@@ -9,9 +9,9 @@ module.exports = {
         filename: 'main.js' // Archivo que voy a generar compilado para produccion
     },
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
     }, // para las extensiones que vamos a usar en nuestro proyecto
-    modules: {
+    module: {
         // Vamos a crear la regla de babel con la que vamos a preparar nuestro proyecto para que sea compatible con todos los navegadores
         rules: [
             {       // Primero la estructura de babel
