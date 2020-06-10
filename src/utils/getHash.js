@@ -1,5 +1,5 @@
 const getHash = () => 
-    location.hash.slice(1).toLocaleLowerCase().split('/')[1] || '/' // ['', '1', '']
+    location.hash.slice(1).toLocaleLowerCase().split('/')[1] || '/'; // ['', '1', '']
 
 /*
 location: es un elemento del navegador
@@ -11,4 +11,4 @@ split: convetirlo en un arreglo, y le pasamos la regla de que elimine los /
 || en caso de que no encuntre ninguna ruta nos manda a / la raiz del proyecto y no este navegando sobre una seccion
 */
 
-export default getHash
+export default getHash;

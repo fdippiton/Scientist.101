@@ -6,7 +6,7 @@ const Error404 = () => {
             <h2>
         </div>
     `
-    return view
+    return view;
 }
 
-export default Error404
+export default Error404;

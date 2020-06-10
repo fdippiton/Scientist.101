@@ -15,8 +15,8 @@ const Character = () => {
             </article>
         </div>
     `
-    return view
+    return view;
 }
 
 
-export default Character
+export default Character;

@@ -1,5 +1,5 @@
-const path = require('path') // Nos permite acceder hacia donde estamos dentro de la carpeta o donde nos estamos moviendo en el proyecto
-const HtmlWebpackPlugin = require('html-webpack-plugin') // Para trabajar con html
+const path = require('path'); // Nos permite acceder hacia donde estamos dentro de la carpeta o donde nos estamos moviendo en el proyecto
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // Para trabajar con html
 
 // Viene cada configuracion de lo que va a suceder
 module.exports = {
