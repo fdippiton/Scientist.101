@@ -24,7 +24,7 @@ const router = async () => { // Sera asincrona porque queremos esperar hasta que
 
     let render = routes[route] ? routes[route] : Error404;
     content.innerHTML = await render();
-
+    // Todo esto nos va a hacer render de nuestra app
 }
 
 export default router;
