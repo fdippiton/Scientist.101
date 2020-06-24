@@ -12,3 +12,4 @@ split: convetirlo en un arreglo, y le pasamos la regla de que elimine los /
 */
 
 export default getHash;
+

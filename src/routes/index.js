@@ -19,9 +19,9 @@ const router = async () => { // Sera asincrona porque queremos esperar hasta que
     const content = null || document.getElementById('content');
 
     header.innerHTML = await Header(); // Empujamos nuestro header a mi app
+    
     let hash = getHash(); // obtener el hash donde se encuentre o la seccion a la que se esta moviendo
     let route = await resolveRoutes(hash); // Debemos manejar las rutas
-
     let render = routes[route] ? routes[route] : Error404;
     content.innerHTML = await render();
     // Todo esto nos va a hacer render de nuestra app
