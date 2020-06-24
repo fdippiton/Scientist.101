@@ -1,5 +1,8 @@
 const path = require('path'); // Nos permite acceder hacia donde estamos dentro de la carpeta o donde nos estamos moviendo en el proyecto
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Para trabajar con html
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
+
 
 // Viene cada configuracion de lo que va a suceder
 module.exports = {
@@ -31,6 +34,15 @@ module.exports = {
                 template: './public/index.html', // En donde se encuentra el template principal base
                 filename: './index.html' // Hacia donde lo mandamos o guardamos, le podemo establecer un nombre o dejarle el que ya tiene
             }
+        ),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: './src/styles/styles.css',
+                    to: ''
+                }
+            ]
+        }           
         )
     ]
 }
